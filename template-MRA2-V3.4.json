@@ -9,7 +9,7 @@
   "type": "MRA2",
   "version": "V3.4",
   "locale": "ja-JP",
-  "lastUpdated": "05/31/2022",
+  "lastUpdated": "06/27/2022",
   "defaults": {
     "userQuestionnaires": {
       "preEvent": {
@@ -75,6 +75,7 @@
   "workstreams": [
     {
       "name": "ビジネスケース",
+      "id": "BusinessCase",
       "accelerator": "ポートフォリオ",
       "activities": [
         {
@@ -220,6 +221,7 @@
     },
     {
       "name": "お客様移行計画",
+      "id": "CustomerMigrationProjectPlan",
       "accelerator": "ポートフォリオ",
       "activities": [
         {
@@ -298,6 +300,7 @@
     },
     {
       "name": "スキルとCOE",
+      "id": "SkillsCOE",
       "accelerator": "ピープル",
       "activities": [
         {
@@ -376,6 +379,7 @@
     },
     {
       "name": "ランディングゾーン",
+      "id": "LandingZone",
       "accelerator": "プラットフォーム",
       "activities": [
         {
@@ -407,6 +411,7 @@
     },
     {
       "name": "アプリケーションポートフォリオ調査と計画",
+      "id": "ApplicationPortfolioDiscoveryPlanning",
       "accelerator": "ポートフォリオ",
       "activities": [
         {
@@ -469,6 +474,7 @@
     },
     {
       "name": "移行プロセスと経験",
+      "id": "MigrationProcessExperience",
       "accelerator": "移行",
       "activities": [
         {
@@ -506,6 +512,7 @@
     },
     {
       "name": "運用モデル",
+      "id": "OperatingModel",
       "accelerator": "プラットフォーム",
       "activities": [
         {
@@ -758,6 +765,7 @@
     },
     {
       "name": "セキュリティとコンプライアンス",
+      "id": "SecurityCompliance",
       "accelerator": "プラットフォーム",
       "activities": [
         {
@@ -772,10 +780,10 @@
               "text": "モビライズの一環として、セキュリティモデルとクラウドセキュリティの基盤について教育します。"
             },
             {
-              "text": "SRC ブループリント：「セキュリティワークショップ」、「エグゼクティブセキュリティシミュレーション」、および「エグゼクティブセキュリティワークショップ」を実行して、Mobilize のセキュリティリーダーシップから意見を集めてください。"
+              "text": "SRC Business Outcomes Scoped Security Advisory (BOSSA): Run the \"Executive Security Simulation\" and the \"Executive Security Workshop\" to gather input from security leadership for Mobilize"
             },
             {
-              "text": "SRC ブループリント：SRC ブループリント契約の「SRC 戦略」モジュールを実行します。"
+              "text": "SRC Control Design: Run the \"Alignment\" module and the \"Scoping\" module of the Control Design engagement"
             },
             {
               "text": "ここで推奨するアクションはございません。"
@@ -820,10 +828,7 @@
               "text": "モビライズの一環として、ガバナンス、リスク、コンプライアンスのベストプラクティスを確立し、機能を構築/改良します。"
             },
             {
-              "text": "SRC ブループリント:SRC ブループリントの「コンプライアンスマッピング」モジュールを実行します。"
-            },
-            {
-              "text": "SRC ブループリント:SRC ブループリント契約の「SRC 意思決定フレームワーク」を実行します。"
+              "text": "SRC Control Design: Run the \"Control Decision\" module of the Control Design engagement"
             },
             {
               "text": "ここで推奨するアクションはございません。"
@@ -3570,558 +3575,558 @@
         "categories": [
           {
             "id": "OverviewInventory",
-            "abbreviation": "AS400 Overview/Inventory",
-            "name": "AS400 Overview/Inventory",
-            "ability": "Use this section to capture some key aspects of your AS/400 (IBM iSeries) systems to begin informing a path forward for this area of the initiative.",
+            "abbreviation": "AS400 概要/インベントリー",
+            "name": "AS400 概要/インベントリー",
+            "ability": "このセクションを使用して、AS/400（IBM iSeries）システムのいくつかの重要な側面を把握し、この領域の担当者との協力を始めます。",
             "questions": [
               {
                 "id": "optionalAS400-OverviewInventory-0",
                 "type": "liveEvent",
-                "question": "What are the business functions and domains supported by the midrange (AS400/iSeries) systems?",
+                "question": "ミッドレンジ (AS400/iSeries) システムでサポートされているビジネス機能とドメインは何ですか?",
                 "answerType": "text",
-                "hint": "Describe the overall purpose of the system and list the functions it delivers.  For example : Insurance - New Business, Claims and Policy Administration",
-                "context": "Business requirements"
+                "hint": "システムの全体的な目的を説明し、システムが提供する機能を挙げてください。例：保険-新規事業、保険金請求、保険金管理",
+                "context": "ビジネス要件"
               },
               {
                 "id": "optionalAS400-OverviewInventory-1",
                 "type": "liveEvent",
-                "question": "What are the key pain points in the legacy system from the business perspective? E.g. Agility, Scalability, Time to market",
+                "question": "ビジネス観点からのレガシーシステムの主な問題点は何ですか？ 　例：俊敏性、スケーラビリティ、市場投入までの時間",
                 "answerType": "text",
-                "hint": "Briefly list challenges that affect the end consumers such as: It takes too much time to deliver enhancements. It becomes slow when business user volume is high on weekends",
-                "context": "Business requirements"
+                "hint": "エンドコンシューマーに影響を与える課題を挙げてください。　例：拡張機能を提供するには時間がかかりすぎる。週末にビジネスユーザー数が多いと遅くなる。",
+                "context": "ビジネス要件"
               },
               {
                 "id": "optionalAS400-OverviewInventory-2",
                 "type": "liveEvent",
-                "question": "Do you have a compelling event or a target date or deadline to modernize your legacy system ?",
+                "question": "レガシーシステムをモダナイズするための制約となるイベント、目標日、期限はありますか？",
                 "answerType": "text",
-                "hint": "Highlight any regulatory compliance deadlines, license renewal date or lease renewal date that could affect the business case for modernization",
-                "context": "Timeline"
+                "hint": "モダナイゼーションのビジネスケースに影響を与える可能性のある規制順守期限、ライセンス更新日、またはリース更新日を明らかにする。",
+                "context": "タイムライン"
               },
               {
                 "id": "optionalAS400-OverviewInventory-3",
                 "type": "liveEvent",
-                "question": "Who are the end users of this system ?",
+                "question": "このシステムのエンドユーザーは誰ですか？",
                 "answerType": "text",
-                "hint": "List the various personas that could make use of the system such as Customers, Back Office Customer Service users, Actuaries, Nurses, Dealers etc.",
-                "context": "Availability requirements"
+                "hint": "顧客、バックオフィス・カスタマー・サービス・ユーザー、保険計理人、看護師、ディーラーなど、システムを利用する様々なペルソナを挙げてください。",
+                "context": "可用性要件"
               },
               {
                 "id": "optionalAS400-OverviewInventory-4",
                 "type": "liveEvent",
-                "question": "How many users connect to the system (s)? - peak and concurrent",
+                "question": "システムに接続するユーザーは何人ですか? - ピーク時と同時アクセス数",
                 "answerType": "text",
-                "hint": "Provide a rough estimate of user volumes such as: 5000 concurrent users on normal days. 50,000 on long weekends.",
-                "context": "Availability requirements"
+                "hint": "ユーザー数の大まかな見積もりを提供します。たとえば、通常の日には5000人の同時ユーザー、長い週末には50,000人など。",
+                "context": "可用性要件"
               },
               {
                 "id": "optionalAS400-OverviewInventory-5",
                 "type": "liveEvent",
-                "question": "Where are the users of the application(s) located?",
+                "question": "アプリケーションのユーザーはどこにいますか？",
                 "answerType": "text",
-                "hint": "North America, South America, Europe, Asia, Africa, Oceania",
-                "context": "Availability requirements"
+                "hint": "北米、南米、ヨーロッパ、アジア、アフリカ、オセアニア",
+                "context": "可用性要件"
               },
               {
                 "id": "optionalAS400-OverviewInventory-7",
                 "type": "liveEvent",
-                "question": "Does this system have to up all day? What are the system uptime (availability) requirements? (24 x7 , 24 x 5)?",
+                "question": "このシステムは一日中、稼働していなければなりませんか？システム稼働時間 (可用性) の要件は何ですか?(24 x 7、24 x 5)?",
                 "answerType": "text",
-                "hint": "24 x7 or 24 x 5",
-                "context": "Availability requirements"
+                "hint": "24時間 x 7日 または 24時間 x 5日",
+                "context": "可用性要件"
               },
               {
                 "id": "optionalAS400-OverviewInventory-8",
                 "type": "liveEvent",
-                "question": "What the expected RTO (recovery  time Objective) and RPO(recovery point objective) during a disaster?",
+                "question": "災害時に予想されるRTO（目標復旧時間）とRPO（目標復旧時点）はどれくらいですか？",
                 "answerType": "text",
-                "hint": "RTO: The amount of time to restore your system from the time of disaster. RPO : The time in the past your data will restore to.",
-                "context": "Availability requirements"
+                "hint": "RTO: 災害発生時からシステムを復旧する時間。RPO: データが復旧される過去の時間。",
+                "context": "可用性要件"
               },
               {
                 "id": "optionalAS400-OverviewInventory-9",
                 "type": "liveEvent",
-                "question": "How many physical machines (AS400/iSeries/Power) are in the scope of this exercise?",
+                "question": "対象となる物理マシン (AS400/iSeries/Power) は何台ですか?",
                 "answerType": "text",
                 "hint": "10",
-                "context": "Compute Size"
+                "context": "[コンピュートサイズ]"
               },
               {
                 "id": "optionalAS400-OverviewInventory-10",
                 "type": "liveEvent",
-                "question": "What kind of midrange machines are in scope of assessment? (E.g. IBM Power 8, System I, iSeries, AS/400, System/36)",
+                "question": "評価の対象となるのはどのようなミッドレンジマシンですか?(例:IBM Power 8、システムI、iSeries、AS/400、システム/36)",
                 "answerType": "text",
-                "hint": "E.g. IBM Power 8, System I, iSeries, AS/400, System/36",
-                "context": "Compute Size"
+                "hint": "例：IBM Power 8、システムI、iSeries、AS/400、システム/36",
+                "context": "[コンピュートサイズ]"
               },
               {
                 "id": "optionalAS400-OverviewInventory-11",
                 "type": "liveEvent",
-                "question": "Do you own all rights to the source code ? Is any of it governed by third party NDA?",
+                "question": "ソースコードに対するすべての権利を所有していますか？第三者のNDAによって管理されているものはありますか？",
                 "answerType": "yesno",
-                "hint": "Yes/No",
-                "context": "Portability of code"
+                "hint": "はい/いいえ",
+                "context": "コードの移植性"
               },
               {
                 "id": "optionalAS400-OverviewInventory-12",
                 "type": "liveEvent",
-                "question": "Please give a rough estimate of application size (Lines of code). ",
+                "question": "アプリケーションサイズの概算を教えてください (コードの行数)。 ",
                 "answerType": "text",
-                "hint": "1,000,000 Lines of RPG. 500,000 lines of COBOL",
-                "context": "Portability of code"
+                "hint": "1,000,000行のRPG。500,000行のCOBOL",
+                "context": "コードの移植性"
               },
               {
                 "id": "optionalAS400-OverviewInventory-13",
                 "type": "liveEvent",
-                "question": "Which are the main programming technologies in use on the platform?",
+                "question": "プラットフォームで使用されている主なプログラミング技術はどれですか？",
                 "answerType": "text",
-                "hint": "RPG3,RPG LE,COBOL LE,CL,DDS, C, C++, Pascal, Java, EGL, Perl, Smalltalk, COBOL, SQL, BASIC, PHP, PL/I, Python and REXX",
-                "context": "Portability of code"
+                "hint": "RPG3、RPG LE、COBOL LE、CL、DDS、C, C++、Pascal、Java、EGL、Perl、Smalltalk、COBOL、SQL、BASIC、PHP、PL/I、Python、REXX",
+                "context": "コードの移植性"
               },
               {
                 "id": "optionalAS400-OverviewInventory-14",
                 "type": "liveEvent",
-                "question": "Which Integrated Development Environment (IDE )do you use for development? (Visual Lansa, RDi etc.)",
+                "question": "開発にはどの統合開発環境 (IDE) を使用していますか?(Visual Lansa、RDi など)",
                 "answerType": "text",
                 "hint": "Visual Lansa, RDi",
-                "context": "Portability of code"
+                "context": "コードの移植性"
               },
               {
                 "id": "optionalAS400-OverviewInventory-15",
                 "type": "liveEvent",
-                "question": "Are you using any Case Tools for development ? ",
+                "question": "開発にCASEツールを使っていますか？ ",
                 "answerType": "text",
-                "hint": "List any case tools like  AllFusion Plex, ADELIA, Synon, LANSA, ProGen Plus, GeneXus, IBM rational developer extension",
-                "context": "Portability of code"
+                "hint": "AllFusion Plex、ADELIA、Synon、LANSA、ProGen Plus、GeneXus、IBM Rational Developer Extension のようなCASEツールをリストアップします。",
+                "context": "コードの移植性"
               },
               {
                 "id": "optionalAS400-OverviewInventory-16",
                 "type": "liveEvent",
-                "question": "Name any commercial Off the shelf (COTS) products, Enterprise planning tools in use on legacy.",
+                "question": "市販の既製品（COTS）製品、レガシーで使用されているエンタープライズプランニングツールを挙げてください。",
                 "answerType": "text",
-                "hint": "Name any ERP systems, Off the shelf products such as Life/400, JD Edwards etc",
-                "context": "Portability of code"
+                "hint": "ERPシステム、Life/400、JD Edwardsなどの既製の製品を挙げてください",
+                "context": "コードの移植性"
               },
               {
                 "id": "optionalAS400-OverviewInventory-17",
                 "type": "liveEvent",
-                "question": "Which database technologies are you using ? (e.g. Db2/400)",
+                "question": "どのデータベーステクノロジーを使用していますか？(例:DB2/400)",
                 "answerType": "text",
-                "hint": "Db2/400",
-                "context": "Portability of code"
+                "hint": "DB2/400",
+                "context": "コードの移植性"
               },
               {
                 "id": "optionalAS400-OverviewInventory-18",
                 "type": "liveEvent",
-                "question": "Please provide an estimate of size of the data on the legacy system (Terabytes or number of records, number of physical files (PFs), number of logical files (LFs)",
+                "question": "レガシーシステム上のデータの推定サイズ（テラバイトまたはレコード数、物理ファイル（PF）の数、論理ファイル（LF）の数）を提供してください",
                 "answerType": "text",
-                "hint": "2000 PF (Physical Files), 750 LF (Logical Files)",
-                "context": "Database size"
+                "hint": "2000 PF (物理ファイル)、750 LF (論理ファイル)",
+                "context": "データベースサイズ"
               },
               {
                 "id": "optionalAS400-OverviewInventory-19",
                 "type": "liveEvent",
-                "question": "What are the source configuration management(SCM) tool used on the AS/400?",
+                "question": "AS/400で使用されているソース構成管理 (SCM) ツールは何ですか?",
                 "answerType": "text",
                 "hint": "Turnover, Aldon, Implementer",
-                "context": "Portability of code"
+                "context": "コードの移植性"
               },
               {
                 "id": "optionalAS400-OverviewInventory-20",
                 "type": "liveEvent",
-                "question": "Which schedulers is/are in use on the AS/400?",
+                "question": "AS/400ではどのスケジューラが使用されていますか？",
                 "answerType": "text",
-                "hint": "CA7, Robot Scheduler",
-                "context": "Integration requirements"
+                "hint": "CA7、Robot Scheduler",
+                "context": "統合要件"
               },
               {
                 "id": "optionalAS400-OverviewInventory-21",
                 "type": "liveEvent",
-                "question": "How is data presented to end users of the application ?",
+                "question": "データはアプリケーションのエンドユーザーにどのように提示されますか？",
                 "answerType": "text",
-                "hint": "5250 emulator screens. Web browser.",
-                "context": "Integration requirements"
+                "hint": "5250のエミュレータ画面。Webブラウザ。",
+                "context": "統合要件"
               },
               {
                 "id": "optionalAS400-OverviewInventory-22",
                 "type": "liveEvent",
-                "question": "Is any screen scraping tool used for AS/400 application? If yes ,which screen scraping tools are being used?(HATS, etc)",
+                "question": "AS/400アプリケーションに使用されている画面スクレイピングツールはありますか？はいの場合、どの画面スクレイピングツールが使用されていますか？(HATS など)",
                 "answerType": "text",
-                "hint": "Yes/No , HATS (IBM Host Access Transformation Services)",
-                "context": "Portability of code"
+                "hint": "はい/いいえ、HATS (IBM ホストアクセス変換サービス)",
+                "context": "コードの移植性"
               },
               {
                 "id": "optionalAS400-OverviewInventory-23",
                 "type": "liveEvent",
-                "question": "Do the AS/400 applications leverage a Web Server running on the AS/400?",
+                "question": "AS/400アプリケーションは、AS/400上で動作するWebサーバを活用していますか?",
                 "answerType": "text",
-                "hint": "IBM HTTP Server (Apache)",
-                "context": "Integration requirements"
+                "hint": "IBM HTTPサーバー (Apache)",
+                "context": "統合要件"
               },
               {
                 "id": "optionalAS400-OverviewInventory-24",
                 "type": "liveEvent",
-                "question": "Describe any integration technologies and products used to connect to the midrange/AS400",
+                "question": "ミッドレンジ/AS400への接続に使用される統合テクノロジーと製品について説明してください。",
                 "answerType": "text",
-                "hint": " JDBC, Active MQ, Document integration (Coolspools)",
-                "context": "Integration requirements"
+                "hint": " JDBC、Active MQ、ドキュメント統合 (Coolspools)",
+                "context": "統合要件"
               },
               {
                 "id": "optionalAS400-OverviewInventory-25",
                 "type": "liveEvent",
-                "question": "Have you attempted any migration or modernization of workloads off this midrange server before this?",
+                "question": "以前に、このミッドレンジサーバからワークロードの移行またはモダナイズを試みたことはありますか?",
                 "answerType": "yesno",
-                "hint": "Yes/No",
-                "context": "Portability of code"
+                "hint": "はい/いいえ",
+                "context": "コードの移植性"
               },
               {
                 "id": "optionalAS400-OverviewInventory-26",
                 "type": "liveEvent",
-                "question": "If the answer to above question is yes, Which patterns were used? And what Is the current status of the project?",
+                "question": "上記の質問に対する答えが「はい」の場合、どのパターンが使用されましたか？そして、プロジェクトの現在の状況はどうなっていますか？",
                 "answerType": "text",
-                "hint": "Patterns: Refactor, rehost, relocate   Status - Active/Paused/Completed",
-                "context": "Timeline"
+                "hint": "パターン：リファクタリング、リホスト、リロケート　　ステータス - アクティブ/一時停止/完了",
+                "context": "タイムライン"
               },
               {
                 "id": "optionalAS400-OverviewInventory-27",
                 "type": "liveEvent",
-                "question": "Are there any in-flight projects that will have dependencies on the AS/400 migration?",
+                "question": "AS/400の移行に依存する進行中のプロジェクトはありますか？",
                 "answerType": "yesno",
-                "hint": "Yes/No",
-                "context": "Timeline"
+                "hint": "はい/いいえ",
+                "context": "タイムライン"
               },
               {
                 "id": "optionalAS400-OverviewInventory-28",
                 "type": "liveEvent",
-                "question": "Is there any project dependency, predecessor that should be considered?",
+                "question": "考慮すべきプロジェクトの依存関係、過去事項はありますか？",
                 "answerType": "text",
-                "hint": "Yes",
-                "context": "Timeline"
+                "hint": "はい",
+                "context": "タイムライン"
               },
               {
                 "id": "optionalAS400-OverviewInventory-29",
                 "type": "liveEvent",
-                "question": "Is there a batch window when the users cannot access the on-line application? If yes what is the period when the application is unavailable to online users.",
+                "question": "ユーザーがオンラインアプリケーションにアクセスできないときにバッチウィンドウはありますか？はいの場合、オンラインユーザーがアプリケーションを利用できない期間は何ですか。",
                 "answerType": "text",
-                "hint": "Usually such systems are unavailable during overnight batch hours.For example 11 PM to 2 AM",
-                "context": "Availability requirements"
+                "hint": "通常、このようなシステムは、夜間のバッチ時間中は利用できません。たとえば、午後11時から午前2時までです。",
+                "context": "可用性要件"
               },
               {
                 "id": "optionalAS400-OverviewInventory-30",
                 "type": "liveEvent",
-                "question": "What is the annual cost of operations (excluding personnel costs)?",
+                "question": "年間運用コスト（人件費を除く）はいくらですか？",
                 "answerType": "text",
-                "hint": "Rough estimate of annual costs is acceptable",
-                "context": "Operational cost"
+                "hint": "年間運用コストは概算で結構です。",
+                "context": "運用コスト"
               },
               {
                 "id": "optionalAS400-OverviewInventory-31",
                 "type": "liveEvent",
-                "question": "Who is operating or managing the customer midrange/AS400 ?",
+                "question": "お客様のミッドレンジ/AS400を運用または管理しているのは誰ですか?",
                 "answerType": "text",
-                "hint": "In-House, Outsourced to Global System integrator (GSI)",
-                "context": "Operational cost"
+                "hint": "社内、グローバルシステムインテグレーター (GSI) にアウトソーシング",
+                "context": "運用コスト"
               },
               {
                 "id": "optionalAS400-OverviewInventory-32",
                 "type": "liveEvent",
-                "question": "Who is maintaining and developing the midrange/AS400 applications ?",
+                "question": "ミッドレンジ/AS400アプリケーションを保守および開発しているのは誰ですか?",
                 "answerType": "text",
-                "hint": "In-House, Outsourced to Global System integrator (GSI)",
-                "context": "Operational cost"
+                "hint": "社内、グローバルシステムインテグレーター (GSI) にアウトソーシング",
+                "context": "運用コスト"
               },
               {
                 "id": "optionalAS400-OverviewInventory-33",
                 "type": "liveEvent",
-                "question": "What is the availability of subject matter expertise for on legacy business processes?",
+                "question": "レガシービジネスプロセスにおける対象分野の専門知識の利用度合いはどれくらいですか？",
                 "hint": "",
-                "context": "Portability of code",
-                "rating1": "1 - No Subject Matter experts available.",
-                "rating2": "2 - Limited SME available but SME are expected to retire soon.",
-                "rating3": "3 - A few SMEs. Limited availability.",
-                "rating4": "4 - Subject Matter experts (SMEs) available with partial(70-80%) understanding of legacy processes.",
-                "rating5": "5 - Subject Matter experts (SMEs) available with complete(100%) understanding of legacy processes."
+                "context": "コードの移植性",
+                "rating1": "1 - 対象分野の専門家はいません。",
+                "rating2": "2 - 対象分野の専門家は限られています。または専門家は間もなく退社される予定です。",
+                "rating3": "3 - 数名の対象分野の専門家がいます。専門家の活用が限定されています。",
+                "rating4": "4 - レガシープロセスを部分的に（70～ 80%）理解している対象分野の専門家がいます。",
+                "rating5": "5 - レガシープロセスを完全に（100%）理解している対象分野の専門家がいます。"
               },
               {
                 "id": "optionalAS400-OverviewInventory-34",
                 "type": "liveEvent",
-                "question": "How many developers maintain and manage the system?",
+                "question": "システムを保守・管理している開発者は何人ですか？",
                 "answerType": "text",
-                "hint": "10 developers",
-                "context": "Operational cost"
+                "hint": "10人の開発者",
+                "context": "運用コスト"
               },
               {
                 "id": "optionalAS400-OverviewInventory-35",
                 "type": "liveEvent",
-                "question": "How would you rate technical expertise on legacy platform?",
+                "question": "レガシープラットフォームに関する技術的な専門知識をどう評価しますか？",
                 "hint": "1-5",
-                "context": "Portability of code",
-                "rating1": "1 - No programmers with legacy skills left on team.",
-                "rating2": "2 - Very few legacy programmers available but team is understaffed.",
-                "rating3": "3 - Few legacy programmers who keep the lights on.",
-                "rating4": "4 - Sufficient programmers available to maintain and enhance legacy.",
-                "rating5": "5 - Surplus programmers with skills available to maintain and enhance legacy."
+                "context": "コードの移植性",
+                "rating1": "1 - レガシースキルを持つプログラマーがチームに残っていない。",
+                "rating2": "2 - 利用可能なレガシープログラマーはほとんどいない、チームは人員不足である。",
+                "rating3": "3 - レガシープログラマーはあまりいません。",
+                "rating4": "4 - レガシーを維持および強化するのに必要なプログラマーが利用可能。",
+                "rating5": "5 - レガシーを維持および強化するためのスキルを持つプログラマーは十分います。"
               },
               {
                 "id": "optionalAS400-OverviewInventory-36",
                 "type": "liveEvent",
-                "question": "Have you performed any analysis of the code base? Please rate the extent of understanding on this code base",
+                "question": "コードベースの分析は行ったことがありますか？このコードベースの理解度を評価してください",
                 "hint": "1-5",
-                "context": "Portability of code",
-                "rating1": "1 - Code is not available.",
-                "rating2": "2 - Code dependencies are not understood.",
-                "rating3": "3 - Code for core processes is available and partially documented.",
-                "rating4": "4 - Code is available and well documented.",
-                "rating5": "5 - Code has been analyzed. Dependencies and metrics are available."
+                "context": "コードの移植性",
+                "rating1": "1 - コードは利用できません。",
+                "rating2": "2 - コードの依存関係が明確ではありません。",
+                "rating3": "3 - コアプロセスのコードが利用可能で、部分的に文書化されている。",
+                "rating4": "4 - コードが利用可能で、十分に文書化されています。",
+                "rating5": "5 - コードが分析されおり、依存関係とメトリクスが利用可能です。"
               },
               {
                 "id": "optionalAS400-OverviewInventory-37",
                 "type": "liveEvent",
-                "question": "Describe if there are test cases, scripts, tools and plans available to test the AS/400 /i Series machine applications?",
+                "question": "AS/400 /iシリーズのマシンアプリケーションをテストするために利用できるテストケース、スクリプト、ツール、および計画があるかどうかを説明してください。",
                 "answerType": "text",
                 "hint": "",
-                "context": "Testing Cost"
+                "context": "テスト費用"
               },
               {
                 "id": "optionalAS400-OverviewInventory-38",
                 "type": "liveEvent",
-                "question": "Please rate the testing capabilities available for the legacy system",
+                "question": "レガシーシステムで利用可能なテスト機能を評価してください",
                 "hint": "1-5",
-                "context": "Testing Cost",
-                "rating1": "1 - No process. Informal and completely manual testing.",
-                "rating2": "2 - Very limited documented test cases for a few projects available.",
-                "rating3": "3 - We have documented test cases for some projects. May not be reusable.",
-                "rating4": "4 - We have  documented test cases which are  not current.",
-                "rating5": "5 - We have well documented test cases which are reusable and regularly improved and, optimized."
+                "context": "テスト費用",
+                "rating1": "1 - プロセスなし。非公式で完全手動のテスト。",
+                "rating2": "2 - いくつかのプロジェクトの非常に限られた文書化されたテストケース。",
+                "rating3": "3 - いくつかのプロジェクトのテストケースを文書化しました。再利用できない場合があります。",
+                "rating4": "4 - 最新ではない文書化されたテストケースがあります。",
+                "rating5": "5 - 再利用可能で定期的に改善され、最適化された、十分に文書化されたテストケースがあります。"
               },
               {
                 "id": "optionalAS400-OverviewInventory-39",
                 "type": "liveEvent",
-                "question": "Is your IT organization run as a federation of groups or a centralized organization? The more distributed the more difficult migration coordination will be assuming the migration scope spans these distributed groups.",
+                "question": "あなたのIT組織はグループの連合として運営されていますか、それとも一元化された組織として運営されていますか？分散が多いほど、移行範囲がこれらの分散グループにまたがると仮定すると、移行の調整が難しくなります。",
                 "hint": "1-5",
-                "context": "Governance",
-                "rating1": "1 - Distributed governance and/or very little influence or control over workloads targeted for migration.",
-                "rating2": "2 - Either governance or influence over migration scope is lacking but can easily be improved.",
-                "rating3": "3 - Governance model or span of control could use some improvement.",
-                "rating4": "4 - Good governance and/or centralized control over scope of migration but could be improved.",
-                "rating5": "5 - Strong governance and centralized control over scope of migration workloads."
+                "context": "統治",
+                "rating1": "1 - 分散型ガバナンス、および/または移行の対象となるワークロードに対する影響または制御がほとんどない。",
+                "rating2": "2 - ガバナンスまたは移行範囲への影響力が不足しているが、容易に改善できる。",
+                "rating3": "3 - ガバナンスモデルまたは制御範囲は、ある程度の改善余地があります。",
+                "rating4": "4 - 移行の範囲に対する優れたガバナンスおよび/または一元管理がされています。ただし改善できる可能性もあります。",
+                "rating5": "5 - 移行ワークロードの範囲に対する強力なガバナンスと一元管理が行われています。"
               },
               {
                 "id": "optionalAS400-OverviewInventory-40",
                 "type": "liveEvent",
-                "question": "How frequently are changes deployed to your legacy application? Name any tools that you use to manage the source code.",
+                "question": "レガシーアプリケーションに変更が展開される頻度はどれくらいですか？ソースコードを管理するために使用するツールを挙げてください。",
                 "answerType": "text",
-                "hint": "Once a week, Once a month, etc.",
-                "context": "Governance"
+                "hint": "週に1回、月に1回など",
+                "context": "統治"
               },
               {
                 "id": "optionalAS400-OverviewInventory-41",
                 "type": "liveEvent",
-                "question": "Which project management methodology do you follow on the AS/400? ",
+                "question": "AS/400ではどのプロジェクト管理方法に従っていますか？ ",
                 "answerType": "text",
-                "hint": "Agile, Kanban, Scrum, Waterfall",
-                "context": "Governance"
+                "hint": "アジャイル、カンバン、スクラム、ウォーターフォール",
+                "context": "統治"
               },
               {
                 "id": "optionalAS400-OverviewInventory-42",
                 "type": "liveEvent",
-                "question": "Who manages the system operations, upgrades etc? (Is it done in house or by an external party)",
+                "question": "システムの運用、アップグレードなどを管理しているのは誰ですか？（社内で行いますか、それとも外部事業者によって行われますか）",
                 "answerType": "text",
-                "hint": "In-house .  Outsourced to vendor XYZ ",
-                "context": "Operational cost"
+                "hint": "社内。ベンダーXYZ社にアウトソーシング ",
+                "context": "運用コスト"
               }
             ]
           },
           {
             "id": "MigrationROMSizingEstimate",
-            "abbreviation": "Migration ROM sizing estimate",
-            "name": "Migration ROM sizing estimate",
-            "ability": "Use this section to capture some key aspects related to the AS/400 aspects of your migration to begin informing a path forward for this area of the initiative.",
+            "abbreviation": "マイグレーションROMサイジングの評価",
+            "name": "マイグレーションROMサイジングの評価",
+            "ability": "このセクションを使用して、AS/400（IBM iSeries）システムのいくつかの重要な側面を把握し、この領域の担当者との協力を始めます。",
             "questions": [
               {
                 "id": "optionalAS400-MigrationROMSizingEstimate-0",
                 "type": "liveEvent",
-                "question": "How many Logical Partitions are present on each machine? If possible describe their purpose and provide max processor capacity",
+                "question": "各マシンには論理パーティションがいくつありますか?可能であればそれらの目的を説明し、最大プロセッサ能力についても説明してください。",
                 "answerType": "text",
-                "hint": "for each machine, give the number of partitions and max virtual processors : E.g.  Sales system  has 4 partitions (1) PRD – 12, (2) 2DEV – 2 (3) DATA – 1 (4) CORP -4",
-                "context": "To estimate compute capacity"
+                "hint": "マシンごとに、パーティションの数と最大仮想プロセッサ数を指定します。たとえば、セールスシステムには4つのパーティション（1）PRD — 12、（2）2DEV-2（3）DATA-1（4）CORP -4",
+                "context": "計算能力の見積もり"
               },
               {
                 "id": "optionalAS400-MigrationROMSizingEstimate-1",
                 "type": "liveEvent",
-                "question": "What is the midrange operating System and version ? -  E.g. IBM i7.4, i5/OS, OS/400 , System/36, CPF, AIX, Linux",
+                "question": "ミッドレンジのオペレーティングシステムとバージョンは何ですか? 例：IBM i7.4、i5/OS、OS/400、システム/36、CPF、AIX、Linux",
                 "answerType": "text",
-                "hint": "E.g. IBM i7.4, i5/OS, OS/400 , System/36, CPF, AIX, Linux",
-                "context": "To identify required features and migration patterns"
+                "hint": "例：IBM i7.4、i5/OS、OS/400、システム/36、CPF、AIX、Linux",
+                "context": "必要な機能と移行パターンの特定"
               },
               {
                 "id": "optionalAS400-MigrationROMSizingEstimate-2",
                 "type": "liveEvent",
-                "question": "What are the annual license costs?",
+                "question": "年間ライセンスコストはいくらですか?",
                 "answerType": "text",
-                "hint": "$1,000,000",
-                "context": "Operational cost"
+                "hint": "1,000,000ドル",
+                "context": "運用コスト"
               },
               {
                 "id": "optionalAS400-MigrationROMSizingEstimate-3",
                 "type": "liveEvent",
-                "question": "What are the model numbers of the machines in scope of assessment? (Your systems team can get this using the command DSPSYSVAL)",
+                "question": "評価の対象となる機械のモデル番号は何ですか？(DSPSYSVAL コマンドを使用してこれを取得できます)",
                 "answerType": "text",
-                "hint": "E.g. IBM Power 8 System S824 with 6 Logical Partitions",
-                "context": "To estimate compute capacity"
+                "hint": "例：6つの論理パーティションを持つIBM Power 8システム S824",
+                "context": "計算能力の見積もり"
               },
               {
                 "id": "optionalAS400-MigrationROMSizingEstimate-4",
                 "type": "liveEvent",
-                "question": "What are the processor types? (Your systems team can get this using the command DSPSYSVAL)",
+                "question": "プロセッサータイプは何ですか？(DSPSYSVAL コマンドを使用してこれを取得できます)",
                 "answerType": "text",
-                "hint": "E.g. 8286-42A EPXF 4.15 Gaz",
-                "context": "To estimate compute capacity"
+                "hint": "例：8286-42A EPXF 4.15 Gaz",
+                "context": "計算能力の見積もり"
               },
               {
                 "id": "optionalAS400-MigrationROMSizingEstimate-5",
                 "type": "liveEvent",
-                "question": "What is the maximum number of processing units across all LPARs?",
+                "question": "すべてのLPARの最大処理ユニット数はいくつですか？",
                 "answerType": "text",
-                "hint": "E.g.  Max processing units 12",
-                "context": "To estimate compute capacity"
+                "hint": "例：最大処理ユニット数 12",
+                "context": "計算能力の見積もり"
               },
               {
                 "id": "optionalAS400-MigrationROMSizingEstimate-6",
                 "type": "liveEvent",
-                "question": "What is the CPW (Commercial Processing Workload) rating?",
+                "question": "CPW (Commercial Processing Workload) の評価は何ですか?",
                 "answerType": "text",
                 "hint": "100",
-                "context": "To estimate compute capacity"
+                "context": "計算能力の見積もり"
               },
               {
                 "id": "optionalAS400-MigrationROMSizingEstimate-7",
                 "type": "liveEvent",
-                "question": "If possible, please provide Maximum CPU utilization",
+                "question": "可能であれば、最大CPU使用率を指定してください",
                 "answerType": "text",
                 "hint": "75%",
-                "context": "To estimate compute capacity"
+                "context": "計算能力の見積もり"
               },
               {
                 "id": "optionalAS400-MigrationROMSizingEstimate-8",
                 "type": "liveEvent",
-                "question": "If possible, please provide Average CPU utilization",
+                "question": "可能であれば、平均 CPU 使用率を入力してください",
                 "answerType": "text",
                 "hint": "60%",
-                "context": "To estimate compute capacity"
+                "context": "計算能力の見積もり"
               },
               {
                 "id": "optionalAS400-MigrationROMSizingEstimate-9",
                 "type": "liveEvent",
-                "question": "What is the RAM size?",
+                "question": "RAM のサイズはどれくらいですか？",
                 "answerType": "text",
-                "hint": "128GB , Note : This can be determined using the WRKSYSSTs command /System i Navigator",
-                "context": "To estimate memory needed"
+                "hint": "128GB、 注：これは WRKSYSSTs コマンド /System i Navigator を使用して決定できます",
+                "context": "必要メモリの見積もり"
               },
               {
                 "id": "optionalAS400-MigrationROMSizingEstimate-10",
                 "type": "liveEvent",
-                "question": "What is the total disk space i.e. volume of warm data on the system? (Terabytes, DB2 tables , number of Physical files (PFs), logical files (LFs) etc.)",
+                "question": "システムの合計ディスク容量、つまりウォームデータの量はどれくらいですか？(テラバイト、DB2 テーブル、物理ファイル (PF) 数、論理ファイル (LF) など)",
                 "answerType": "text",
                 "hint": "",
-                "context": "To estimate storage patterns"
+                "context": "ストレージパターンの推定"
               },
               {
                 "id": "optionalAS400-MigrationROMSizingEstimate-11",
                 "type": "liveEvent",
-                "question": "What is the max Disk IOPS (Input outputs per second)",
+                "question": "最大ディスク IOPS (1 秒あたりの入力出力) はどれくらいですか",
                 "answerType": "text",
                 "hint": "",
-                "context": "To estimate storage patterns"
+                "context": "ストレージパターンの推定"
               },
               {
                 "id": "optionalAS400-MigrationROMSizingEstimate-12",
                 "type": "liveEvent",
-                "question": "What is the volume of backup (cold) data? Where is it stored? (Tapes, S3, etc.)?",
+                "question": "バックアップ (コールド) データの量はどれくらいですか?どこに保管されていますか？(テープ、S3 など)?",
                 "answerType": "text",
                 "hint": "",
-                "context": "To estimate storage patterns"
+                "context": "ストレージパターンの推定"
               },
               {
                 "id": "optionalAS400-MigrationROMSizingEstimate-13",
                 "type": "liveEvent",
-                "question": "What is the Average network IOPS (Input outputs per second)?",
+                "question": "平均ネットワークIOPS (1秒あたりの入力出力) はどれくらいですか?",
                 "answerType": "text",
                 "hint": "1000",
-                "context": "To estimate & design network"
+                "context": "ネットワークの概算と設計"
               },
               {
                 "id": "optionalAS400-MigrationROMSizingEstimate-14",
                 "type": "liveEvent",
-                "question": "What is the Maximum network IOPS (Input outputs per second)?",
+                "question": "最大ネットワーク IOPS (1 秒あたりの入力出力) はいくらですか?",
                 "answerType": "text",
                 "hint": "2000",
-                "context": "To estimate & design network"
+                "context": "ネットワークの概算と設計"
               },
               {
                 "id": "optionalAS400-MigrationROMSizingEstimate-15",
                 "type": "liveEvent",
-                "question": "Size of development Environment : What  percentage of the compute, storage, database, and networking should be considered for the Dev environment?",
+                "question": "開発環境の規模： 開発環境として、コンピューティング、ストレージ、データベース、ネットワーキングの何パーセント程度と考えるべきですか？",
                 "answerType": "text",
                 "hint": "10%",
-                "context": "To estimate compute capacity"
+                "context": "計算能力の見積もり"
               },
               {
                 "id": "optionalAS400-MigrationROMSizingEstimate-16",
                 "type": "liveEvent",
-                "question": "Size of testing Environment : What  percentage of the compute, storage, database, and networking should be considered for the Testing environment?",
+                "question": "テスト環境の規模：　テスト環境として、コンピューティング、ストレージ、データベース、ネットワーキングの何パーセント程度と考えるべきですか？",
                 "answerType": "text",
-                "hint": "10% of production size",
-                "context": "To estimate compute capacity"
+                "hint": "生産規模の 10%",
+                "context": "計算能力の見積もり"
               },
               {
                 "id": "optionalAS400-MigrationROMSizingEstimate-17",
                 "type": "liveEvent",
-                "question": "If available, please provide size of the each type of code. (lines of code)",
+                "question": "可能な場合は、各タイプのコードのサイズを入力してください。(コード行数)",
                 "answerType": "text",
-                "hint": "Provide a best estimate. For example 5 million lines of RPG and 500 K of CL",
-                "context": "To estimate compute capacity"
+                "hint": "最適な見積もりを提供します。たとえば、500万行のRPGと500KのCLなど。",
+                "context": "計算能力の見積もり"
               }
             ]
           },
           {
             "id": "MigrationPatternToolGuidance",
-            "abbreviation": "Migration Pattern & Tool Guidance",
-            "name": "Migration Pattern & Tool Guidance",
-            "ability": "Use this section to capture some key aspects related to the AS/400 aspects of your migration to begin informing a path forward for this area of the initiative.",
+            "abbreviation": "マイグレーションパターン & ツールのガイド",
+            "name": "マイグレーションパターン & ツールのガイド",
+            "ability": "このセクションを使用して、AS/400（IBM iSeries）システムのいくつかの重要な側面を把握し、この領域の担当者との協力を始めます。",
             "questions": [
               {
                 "id": "optionalAS400-MigrationPatternToolGuidance-0",
                 "type": "liveEvent",
-                "question": "Is the application stable and capable of delivering all business requirements?",
+                "question": "アプリケーションは安定していて、すべてのビジネス要件を満たすことができますか？",
                 "answerType": "yesno",
-                "hint": "Yes/No"
+                "hint": "はい/いいえ"
               },
               {
                 "id": "optionalAS400-MigrationPatternToolGuidance-1",
                 "type": "liveEvent",
-                "question": "Are you planning to make major changes to the application in the coming years/months?",
+                "question": "今後数年/数か月のうちにアプリケーションに大きな変更を加える予定はありますか？",
                 "answerType": "yesno",
-                "hint": "Yes/No"
+                "hint": "はい/いいえ"
               },
               {
                 "id": "optionalAS400-MigrationPatternToolGuidance-2",
                 "type": "liveEvent",
-                "question": "Do you plan to isolate and scale functions as micro services?",
+                "question": "機能をマイクロサービスとして分離して拡張する予定はありますか？",
                 "answerType": "yesno",
-                "hint": "Yes/No"
+                "hint": "はい/いいえ"
               },
               {
                 "id": "optionalAS400-MigrationPatternToolGuidance-3",
                 "type": "liveEvent",
-                "question": "Are any non AS400 applications integrated with the mid range server ?",
+                "question": "AS400以外のアプリケーションはミッドレンジサーバと統合されていますか?",
                 "answerType": "yesno",
-                "hint": "Yes/No"
+                "hint": "はい/いいえ"
               },
               {
                 "id": "optionalAS400-MigrationPatternToolGuidance-4",
                 "type": "liveEvent",
-                "question": "Is the application web enabled? How does the web application connect with legacy?",
+                "question": "アプリケーションの Web は有効になっていますか?ウェブアプリケーションはレガシーとどのように結びついていますか？",
                 "answerType": "text",
                 "hint": "",
                 "context": ""
@@ -4129,7 +4134,7 @@
               {
                 "id": "optionalAS400-MigrationPatternToolGuidance-5",
                 "type": "liveEvent",
-                "question": "Is the application mobile enabled? How does the mobile app connect with legacy?",
+                "question": "アプリケーションのモバイルは有効になっていますか？モバイルアプリはレガシーとどのようにつながりますか？",
                 "answerType": "text",
                 "hint": "",
                 "context": ""
@@ -4137,7 +4142,7 @@
               {
                 "id": "optionalAS400-MigrationPatternToolGuidance-6",
                 "type": "liveEvent",
-                "question": "Is there any queue based integration? How is it done?",
+                "question": "キューベースの統合はありますか？どうやって行われていますか？",
                 "answerType": "text",
                 "hint": "",
                 "context": ""
@@ -4145,7 +4150,7 @@
               {
                 "id": "optionalAS400-MigrationPatternToolGuidance-7",
                 "type": "liveEvent",
-                "question": "List any CGI interfaces (Common Gateway Interfaces)",
+                "question": "CGI インタフェース (共通ゲートウェイインタフェース) を一覧表示する",
                 "answerType": "text",
                 "hint": "",
                 "context": ""
@@ -4153,23 +4158,23 @@
               {
                 "id": "optionalAS400-MigrationPatternToolGuidance-8",
                 "type": "liveEvent",
-                "question": "List data transfer interfaces (e.g. iSeries Data Transfer, FTP, SFTP, Webservices, IBM Direct Connect, JDBC/ODBC)",
+                "question": "データ転送インターフェイスのリスト (例:iSeries データ転送、FTP、SFTP、Webサービス、IBM ダイレクトコネクト、JDBC/ODBC)",
                 "answerType": "text",
-                "hint": "FTP, SFTP, Webservices, IBM Direct Connect",
+                "hint": "FTP、SFTP、ウェブサービス、IBM ダイレクトコネクト",
                 "context": ""
               },
               {
                 "id": "optionalAS400-MigrationPatternToolGuidance-9",
                 "type": "liveEvent",
-                "question": "List any monitoring and auditing services (e.g. AS400 native auditing, third party logging and auditing tools)",
+                "question": "監視および監査サービス (例:AS400 ネイティブ監査、サードパーティロギングおよび監査ツール) を挙げてください。",
                 "answerType": "text",
-                "hint": "AS400 native auditing, third party logging and auditing tools",
+                "hint": "AS400ネイティブ監査、サードパーティロギングおよび監査ツール",
                 "context": ""
               },
               {
                 "id": "optionalAS400-MigrationPatternToolGuidance-10",
                 "type": "liveEvent",
-                "question": "Do you have an S/36 flat files (internally described). If yes how many?",
+                "question": "S/36フラットファイル（内部で説明）はありますか。はいの場合はいくつですか？",
                 "answerType": "text",
                 "hint": "500",
                 "context": ""
@@ -4177,15 +4182,15 @@
               {
                 "id": "optionalAS400-MigrationPatternToolGuidance-11",
                 "type": "liveEvent",
-                "question": "How are the data entities defined ? (DDS - data description specification, DDL - SQL data definition language, Other ?)",
+                "question": "データエンティティはどのように定義されていますか？(DDS - データ記述仕様、DDL - SQL データ定義言語、その他?)",
                 "answerType": "text",
-                "hint": "DDS, DDL , both",
+                "hint": "DDS、DDL、両方",
                 "context": ""
               },
               {
                 "id": "optionalAS400-MigrationPatternToolGuidance-12",
                 "type": "liveEvent",
-                "question": "If possible please provide available data sizing metrics? (Terabytes, Number of DB2 tables , number of Physical files (PFs), logical files (LFs) etc.)",
+                "question": "可能であれば、利用可能なデータサイズ測定基準を提供してください。(テラバイト、DB2 テーブル数、物理ファイル (PF) 数、論理ファイル (LF) など)",
                 "answerType": "text",
                 "hint": "",
                 "context": ""
@@ -4193,23 +4198,23 @@
               {
                 "id": "optionalAS400-MigrationPatternToolGuidance-13",
                 "type": "liveEvent",
-                "question": "Are you are using the Midrange(AS400) data as backing for an external database like PostgreSQL, MongoDB, REDIS in PASE? If so please provide detail",
+                "question": "PASEのPostgreSQL、MongoDB、REDISなどの外部データベースのバックとしてミッドレンジ（AS400）データを使用していますか？ もしそうなら詳細を説明してください。",
                 "answerType": "text",
-                "hint": "PostGresSQL , MongoDB",
+                "hint": "PostgresSQL、mongoDB",
                 "context": ""
               },
               {
                 "id": "optionalAS400-MigrationPatternToolGuidance-14",
                 "type": "liveEvent",
-                "question": "Is your data warehouse hosted on the AS/400 Or is it external to the AS/400?",
+                "question": "データウェアハウスはAS/400でホストされていますか、それともAS/400の外部にありますか？",
                 "answerType": "text",
-                "hint": "Yes/No",
+                "hint": "はい/いいえ",
                 "context": ""
               },
               {
                 "id": "optionalAS400-MigrationPatternToolGuidance-15",
                 "type": "liveEvent",
-                "question": "Have you integrated any reporting applications/analytics with the backend?",
+                "question": "バックエンドにレポーティングアプリケーション/アナリティクスを統合したことがありますか？",
                 "answerType": "text",
                 "hint": "",
                 "context": ""
@@ -4218,513 +4223,513 @@
           },
           {
             "id": "PreferredTargetArchitecture",
-            "abbreviation": "Preferred Target Architecture",
-            "name": "Preferred Target Architecture",
-            "ability": "Use this section to capture some key aspects related to the AS/400 aspects of your migration to begin informing a path forward for this area of the initiative.",
+            "abbreviation": "ご希望のターゲットアーキテクチャ",
+            "name": "ご希望のターゲットアーキテクチャ",
+            "ability": "このセクションを使用して、AS/400（IBM iSeries）システムのいくつかの重要な側面を把握し、この領域の担当者との協力を始めます。",
             "questions": [
               {
                 "id": "optionalAS400-PreferredTargetArchitecture-0",
                 "type": "liveEvent",
-                "question": "What is your preferred target platform (Windows /Linux )?",
+                "question": "ご希望のターゲットプラットフォーム (Windows/Linux) は何ですか?",
                 "answerType": "text",
-                "hint": "Window/Linux",
+                "hint": "Window / Linux",
                 "context": ""
               },
               {
                 "id": "optionalAS400-PreferredTargetArchitecture-1",
                 "type": "liveEvent",
-                "question": "What is your Preferred target language (.NET, Java , retain legacy language)?",
+                "question": "ご希望のターゲット言語 (.NET、Java、レガシー言語の継続) は何ですか?",
                 "answerType": "text",
-                "hint": "(.NET, Java , retain legacy language)",
+                "hint": "(.NET、Java、従来言語を維持)",
                 "context": ""
               },
               {
                 "id": "optionalAS400-PreferredTargetArchitecture-2",
                 "type": "liveEvent",
-                "question": "Preferred target database to be used (IDB*, Oracle or MS SQL Server)? ",
+                "question": "ご希望のターゲットデータベース (IDB*、Oracle、または MS SQL Server) は何ですか？",
                 "answerType": "text",
-                "hint": "Aurora , Amazon RDS, SQL Server, Oracle,  IDB (a DB2/400 compatible database built into the Infinite iSeries emulator)",
+                "hint": "Aurora、Amazon RDS、SQL Server、Oracle、IDB（iSeriesエミュレーターに組み込まれたDB2/400互換データベース）",
                 "context": ""
               },
               {
                 "id": "optionalAS400-PreferredTargetArchitecture-3",
                 "type": "liveEvent",
-                "question": "Do you want to retain EBCDIC encoding for data in the target environment?",
+                "question": "ターゲット環境にあるデータのために、EBCDIC エンコーディングを維持しますか?",
                 "answerType": "yesno",
-                "hint": "Yes/No",
+                "hint": "はい/いいえ",
                 "context": ""
               },
               {
                 "id": "optionalAS400-PreferredTargetArchitecture-6",
                 "type": "liveEvent",
-                "question": "Have you identified a Proof of Concept (POC) or Pilot candidate and the entry points to the selected scope?",
+                "question": "概念実証 (POC) またはパイロットの候補を特定し、選択した範囲のエントリポイントを特定しましたか?",
                 "answerType": "text",
-                "hint": "Please name the function to test and function (Entry point)s from which you plan to test the function. E.g Insurance - New Business entry",
+                "hint": "テストする機能と、その機能をテストする予定の機能群 (エントリポイント) の名前を挙げてください。 例：保険 - 新規事業参入",
                 "context": ""
               },
               {
                 "id": "optionalAS400-PreferredTargetArchitecture-7",
                 "type": "liveEvent",
-                "question": "Can you give the size of the POC candidate in terms of program type and lines of code?",
+                "question": "プログラムの種類とコード行数の観点から、POC候補のサイズを説明してください。",
                 "answerType": "text",
-                "hint": "Ideally the overall size of the proof of concept candidate should be less than 50,000 lines of code",
+                "hint": "理想的には、概念実証候補の全体的なサイズは、コード行数で 50,000行未満である必要があります。",
                 "context": ""
               }
             ]
           },
           {
             "id": "WorkloadsOptional",
-            "abbreviation": "Workloads (optional)",
-            "name": "Workloads (optional)",
-            "ability": "Use this section to capture some key aspects related to the AS/400 aspects of your migration to begin informing a path forward for this area of the initiative.",
+            "abbreviation": "ワークロード（オプション）",
+            "name": "ワークロード（オプション）",
+            "ability": "このセクションを使用して、AS/400（IBM iSeries）システムのいくつかの重要な側面を把握し、この領域の担当者との協力を始めます。",
             "questions": [
               {
                 "id": "optionalAS400-WorkloadsOptional-0",
                 "type": "liveEvent",
-                "question": "Number of S/36 style flat files (internally described)",
+                "question": "S/36スタイルのフラットファイルの数",
                 "answerType": "text",
                 "hint": "",
-                "context": "Estimate the Migration effort"
+                "context": "移行作業の見積もり"
               },
               {
                 "id": "optionalAS400-WorkloadsOptional-1",
                 "type": "liveEvent",
-                "question": "Number of Physical Files",
+                "question": "物理ファイル数",
                 "answerType": "text",
                 "hint": "",
-                "context": "Estimate the Migration effort"
+                "context": "移行作業の見積もり"
               },
               {
                 "id": "optionalAS400-WorkloadsOptional-2",
                 "type": "liveEvent",
-                "question": "Number of Logical Files",
+                "question": "論理ファイル数",
                 "answerType": "text",
                 "hint": "",
-                "context": "Estimate the Migration effort"
+                "context": "移行作業の見積もり"
               },
               {
                 "id": "optionalAS400-WorkloadsOptional-3",
                 "type": "liveEvent",
-                "question": "Number of DDL Sources",
+                "question": "DDL ソースの数",
                 "answerType": "text",
                 "hint": "",
-                "context": "Estimate the Migration effort"
+                "context": "移行作業の見積もり"
               },
               {
                 "id": "optionalAS400-WorkloadsOptional-4",
                 "type": "liveEvent",
-                "question": "Number of Tables",
+                "question": "テーブル数",
                 "answerType": "text",
                 "hint": "",
-                "context": "Estimate the Migration effort"
+                "context": "移行作業の見積もり"
               },
               {
                 "id": "optionalAS400-WorkloadsOptional-5",
                 "type": "liveEvent",
-                "question": "Number of CL Programs",
+                "question": "CL プログラムの数",
                 "answerType": "text",
                 "hint": "",
-                "context": "Estimate the Migration effort"
+                "context": "移行作業の見積もり"
               },
               {
                 "id": "optionalAS400-WorkloadsOptional-6",
                 "type": "liveEvent",
-                "question": "Number of ILE CL Programs",
+                "question": "ILE CL プログラムの数",
                 "answerType": "text",
                 "hint": "",
-                "context": "Estimate the Migration effort"
+                "context": "移行作業の見積もり"
               },
               {
                 "id": "optionalAS400-WorkloadsOptional-7",
                 "type": "liveEvent",
-                "question": "Number of Custom CL Commands",
+                "question": "カスタム CL コマンドの数",
                 "answerType": "text",
                 "hint": "",
-                "context": "Estimate the Migration effort"
+                "context": "移行作業の見積もり"
               },
               {
                 "id": "optionalAS400-WorkloadsOptional-8",
                 "type": "liveEvent",
-                "question": "Number of RPG/400 Programs",
+                "question": "RPG/400プログラムの数",
                 "answerType": "text",
                 "hint": "",
-                "context": "Estimate the Migration effort"
+                "context": "移行作業の見積もり"
               },
               {
                 "id": "optionalAS400-WorkloadsOptional-9",
                 "type": "liveEvent",
-                "question": "Number of COBOL/400 Programs",
+                "question": "COBOL/400プログラム数",
                 "answerType": "text",
                 "hint": "",
-                "context": "Estimate the Migration effort"
+                "context": "移行作業の見積もり"
               },
               {
                 "id": "optionalAS400-WorkloadsOptional-10",
                 "type": "liveEvent",
-                "question": "Number of SQL RPG/400 Programs",
+                "question": "SQL RPG/400 プログラムの数",
                 "answerType": "text",
                 "hint": "",
-                "context": "Estimate the Migration effort"
+                "context": "移行作業の見積もる"
               },
               {
                 "id": "optionalAS400-WorkloadsOptional-11",
                 "type": "liveEvent",
-                "question": "Number of SQL COBOL/400 programs",
+                "question": "SQL COBOL/400プログラム数",
                 "answerType": "text",
                 "hint": "",
-                "context": "Estimate the Migration effort"
+                "context": "移行作業の見積もり"
               },
               {
                 "id": "optionalAS400-WorkloadsOptional-12",
                 "type": "liveEvent",
-                "question": "Number of C/C++ 400 programs",
+                "question": "C/C++ 400 プログラムの数",
                 "answerType": "text",
                 "hint": "",
-                "context": "Estimate the Migration effort"
+                "context": "移行作業の見積もり"
               },
               {
                 "id": "optionalAS400-WorkloadsOptional-13",
                 "type": "liveEvent",
-                "question": "Number of ILE Modules",
+                "question": "ILE モジュール数",
                 "answerType": "text",
                 "hint": "",
-                "context": "Estimate the Migration effort"
+                "context": "移行作業の見積もり"
               },
               {
                 "id": "optionalAS400-WorkloadsOptional-14",
                 "type": "liveEvent",
-                "question": "Number of ILE RPG programs",
+                "question": "ILE RPG プログラムの数",
                 "answerType": "text",
                 "hint": "",
-                "context": "Estimate the Migration effort"
+                "context": "移行作業の見積もり"
               },
               {
                 "id": "optionalAS400-WorkloadsOptional-15",
                 "type": "liveEvent",
-                "question": "Number of ILE SQL RPG Programs",
+                "question": "ILE SQL RPG プログラムの数",
                 "answerType": "text",
                 "hint": "",
-                "context": "Estimate the Migration effort"
+                "context": "移行作業の見積もり"
               },
               {
                 "id": "optionalAS400-WorkloadsOptional-16",
                 "type": "liveEvent",
-                "question": "Number of ILE COBOL Programs",
+                "question": "ILE COBOL プログラムの数",
                 "answerType": "text",
                 "hint": "",
-                "context": "Estimate the Migration effort"
+                "context": "移行作業の見積もり"
               },
               {
                 "id": "optionalAS400-WorkloadsOptional-17",
                 "type": "liveEvent",
-                "question": "Number of ILE SQL COBOL Programs",
+                "question": "ILE SQL COBOL プログラムの数",
                 "answerType": "text",
                 "hint": "",
-                "context": "Estimate the Migration effort"
+                "context": "移行作業の見積もり"
               },
               {
                 "id": "optionalAS400-WorkloadsOptional-18",
                 "type": "liveEvent",
-                "question": "Number of ILE C/C++ programs",
+                "question": "ILE C/C++ プログラムの数",
                 "answerType": "text",
                 "hint": "",
-                "context": "Estimate the Migration effort"
+                "context": "移行作業の見積もり"
               },
               {
                 "id": "optionalAS400-WorkloadsOptional-19",
                 "type": "liveEvent",
-                "question": "Number of ILE Service Programs",
+                "question": "ILE サービスプログラムの数",
                 "answerType": "text",
                 "hint": "",
-                "context": "Estimate the Migration effort"
+                "context": "移行作業を見積もる"
               },
               {
                 "id": "optionalAS400-WorkloadsOptional-20",
                 "type": "liveEvent",
-                "question": "Number of Java/400 Programs",
+                "question": "Java/400プログラムの数",
                 "answerType": "text",
                 "hint": "",
-                "context": "Estimate the Migration effort"
+                "context": "移行作業の見積もり"
               },
               {
                 "id": "optionalAS400-WorkloadsOptional-21",
                 "type": "liveEvent",
-                "question": "Number of System/36 RPG II programs",
+                "question": "システム数/36 RPG II プログラム",
                 "answerType": "text",
                 "hint": "",
-                "context": "Estimate the Migration effort"
+                "context": "移行作業の見積もり"
               },
               {
                 "id": "optionalAS400-WorkloadsOptional-22",
                 "type": "liveEvent",
-                "question": "Number of System/36 OCL Procedures",
+                "question": "システム数/36 OCL プロシージャ",
                 "answerType": "text",
                 "hint": "",
-                "context": "Estimate the Migration effort"
+                "context": "移行作業の見積もり"
               },
               {
                 "id": "optionalAS400-WorkloadsOptional-23",
                 "type": "liveEvent",
-                "question": "Number of Display Files",
+                "question": "表示ファイル数",
                 "answerType": "text",
                 "hint": "",
-                "context": "Estimate the Migration effort"
+                "context": "移行作業の見積もり"
               },
               {
                 "id": "optionalAS400-WorkloadsOptional-24",
                 "type": "liveEvent",
-                "question": "Number of Printer Files",
+                "question": "プリンタファイル数",
                 "answerType": "text",
                 "hint": "",
-                "context": "Estimate the Migration effort"
+                "context": "移行作業の見積もり"
               },
               {
                 "id": "optionalAS400-WorkloadsOptional-25",
                 "type": "liveEvent",
-                "question": "Number of Panel Groups",
+                "question": "パネルグループの数",
                 "answerType": "text",
                 "hint": "",
-                "context": "Estimate the Migration effort"
+                "context": "移行作業の見積もり"
               },
               {
                 "id": "optionalAS400-WorkloadsOptional-26",
                 "type": "liveEvent",
-                "question": "Number of Menus (MNU)",
+                "question": "メニュー数 (MNU)",
                 "answerType": "text",
                 "hint": "",
-                "context": "Estimate the Migration effort"
+                "context": "移行作業の見積もり"
               },
               {
                 "id": "optionalAS400-WorkloadsOptional-27",
                 "type": "liveEvent",
-                "question": "Number of Activation Groups",
+                "question": "アクティベーショングループの数",
                 "answerType": "text",
                 "hint": "",
-                "context": "Estimate the Migration effort"
+                "context": "x移行作業の見積もり"
               },
               {
                 "id": "optionalAS400-WorkloadsOptional-28",
                 "type": "liveEvent",
-                "question": "Database triggers or referential integrity constraints used?",
+                "question": "データベーストリガーまたは参照整合性制約を使用していますか？",
                 "answerType": "text",
                 "hint": "",
-                "context": "Estimate the Migration effort"
+                "context": "移行作業の見積もり"
               },
               {
                 "id": "optionalAS400-WorkloadsOptional-29",
                 "type": "liveEvent",
-                "question": "Are the Integrated File System (IFS) and/or related commands used?",
+                "question": "統合ファイルシステム (IFS) や関連コマンドが使用されていますか?",
                 "answerType": "text",
                 "hint": "",
-                "context": "Estimate the Migration effort"
+                "context": "移行作業の見積もり"
               },
               {
                 "id": "optionalAS400-WorkloadsOptional-30",
                 "type": "liveEvent",
-                "question": "Provide an inventory of the OS/400 APIs used",
+                "question": "使用している OS/400 API のインベントリを提示してください。",
                 "answerType": "text",
                 "hint": "",
-                "context": "Estimate the Migration effort"
+                "context": "移行作業の見積もり"
               },
               {
                 "id": "optionalAS400-WorkloadsOptional-31",
                 "type": "liveEvent",
-                "question": "List any CGI interfaces (Common Gateway Interfaces)",
+                "question": "CGI インタフェース (共通ゲートウェイインタフェース) を一覧提示してください。",
                 "answerType": "text",
                 "hint": "",
-                "context": "Estimate the Migration effort"
+                "context": "移行作業の見積もり"
               },
               {
                 "id": "optionalAS400-WorkloadsOptional-32",
                 "type": "liveEvent",
-                "question": "Number of MQ Interfaces",
+                "question": "MQ インターフェイスの数",
                 "answerType": "text",
                 "hint": "",
-                "context": "Estimate the Migration effort"
+                "context": "移行作業を見積もる"
               },
               {
                 "id": "optionalAS400-WorkloadsOptional-33",
                 "type": "liveEvent",
-                "question": "Query Manager Queries",
+                "question": "クエリマネージャークエリ",
                 "answerType": "text",
                 "hint": "",
-                "context": "Estimate the Migration effort"
+                "context": "移行作業の見積もり"
               },
               {
                 "id": "optionalAS400-WorkloadsOptional-34",
                 "type": "liveEvent",
-                "question": "Number of Office 400 Objects",
+                "question": "Office 400 オブジェクトの数",
                 "answerType": "text",
                 "hint": "",
-                "context": "Estimate the Migration effort"
+                "context": "移行作業の見積もり"
               },
               {
                 "id": "optionalAS400-WorkloadsOptional-35",
                 "type": "liveEvent",
-                "question": "List data transfer interfaces (e.g. iSeries Data Transfer, FTP, SFTP, Webservices, IBM Direct Connect, JDBC/ODBC)",
+                "question": "データ転送インターフェイスのリスト (例:iSeries データ転送、FTP、SFTP、Web サービス、IBM ダイレクトコネクト、JDBC/ODBC)",
                 "answerType": "text",
                 "hint": "",
-                "context": "Estimate the Migration effort"
+                "context": "移行作業の見積もり"
               },
               {
                 "id": "optionalAS400-WorkloadsOptional-36",
                 "type": "liveEvent",
-                "question": "List any rendering services (e.g. XML, PDF, HTML)",
+                "question": "レンダリングサービス (XML、PDF、HTML など) を一覧提示してください。",
                 "answerType": "text",
                 "hint": "",
-                "context": "Estimate the Migration effort"
+                "context": "移行作業の見積もり"
               },
               {
                 "id": "optionalAS400-WorkloadsOptional-37",
                 "type": "liveEvent",
-                "question": "List any monitoring and auditing services (e.g. AS400 native auditing, third party logging and auditing tools)",
+                "question": "監視および監査サービス (例:AS400 ネイティブ監査、サードパーティロギングおよび監査ツール) を挙げてください。",
                 "answerType": "text",
                 "hint": "",
-                "context": "Estimate the Migration effort"
+                "context": "移行作業の見積もり"
               },
               {
                 "id": "optionalAS400-WorkloadsOptional-38",
                 "type": "liveEvent",
-                "question": "Number of Synon Models",
+                "question": "Synon のモデル数",
                 "answerType": "text",
                 "hint": "",
-                "context": "Estimate the Migration effort"
+                "context": "移行作業の見積もり"
               },
               {
                 "id": "optionalAS400-WorkloadsOptional-39",
                 "type": "liveEvent",
-                "question": "Number of Synon Entities",
+                "question": "Synon エンティティの数",
                 "answerType": "text",
                 "hint": "",
-                "context": "Estimate the Migration effort"
+                "context": "移行作業の見積もり"
               },
               {
                 "id": "optionalAS400-WorkloadsOptional-40",
                 "type": "liveEvent",
-                "question": "Number of Synon Access Paths/Logical Files",
+                "question": "Synon アクセスパス/論理ファイルの数",
                 "answerType": "text",
                 "hint": "",
-                "context": "Estimate the Migration effort"
+                "context": "移行作業を見積もる"
               },
               {
                 "id": "optionalAS400-WorkloadsOptional-41",
                 "type": "liveEvent",
-                "question": "Number of Synon Functions",
+                "question": "Synon 関数の数",
                 "answerType": "text",
                 "hint": "",
-                "context": "Estimate the Migration effort"
+                "context": "移行作業の見積もり"
               },
               {
                 "id": "optionalAS400-WorkloadsOptional-42",
                 "type": "liveEvent",
-                "question": "Number of Synon Internal Routines",
+                "question": "Synon 内部ルーチンの数",
                 "answerType": "text",
                 "hint": "",
-                "context": "Estimate the Migration effort"
+                "context": "移行作業の見積もり"
               },
               {
                 "id": "optionalAS400-WorkloadsOptional-43",
                 "type": "liveEvent",
-                "question": "Number of Synon Action Diagrams",
+                "question": "Synon アクションダイアグラムの数",
                 "answerType": "text",
                 "hint": "",
-                "context": "Estimate the Migration effort"
+                "context": "移行作業の見積もり"
               },
               {
                 "id": "optionalAS400-WorkloadsOptional-44",
                 "type": "liveEvent",
-                "question": "Number of LANSA repositories",
+                "question": "LANSA リポジトリの数",
                 "answerType": "text",
                 "hint": "",
-                "context": "Estimate the Migration effort"
+                "context": "移行作業の見積もり"
               },
               {
                 "id": "optionalAS400-WorkloadsOptional-45",
                 "type": "liveEvent",
-                "question": "Number of LANSA RDML functions",
+                "question": "LANSA RDML関数の数",
                 "answerType": "text",
                 "hint": "",
-                "context": "Estimate the Migration effort"
+                "context": "移行作業の見積もり"
               },
               {
                 "id": "optionalAS400-WorkloadsOptional-46",
                 "type": "liveEvent",
-                "question": "Number of LANSA Files",
+                "question": "LANSA ファイルの数",
                 "answerType": "text",
                 "hint": "",
-                "context": "Estimate the Migration effort"
+                "context": "移行作業の見積もり"
               },
               {
                 "id": "optionalAS400-WorkloadsOptional-47",
                 "type": "liveEvent",
-                "question": "Number of LANSA Logical Views",
+                "question": "LANSA 論理ビューの数",
                 "answerType": "text",
                 "hint": "",
-                "context": "Estimate the Migration effort"
+                "context": "移行作業の見積もり"
               },
               {
                 "id": "optionalAS400-WorkloadsOptional-48",
                 "type": "liveEvent",
-                "question": "Number of LANSA Validation rules/triggers",
+                "question": "LANSA 検証ルール/トリガーの数",
                 "answerType": "text",
                 "hint": "",
-                "context": "Estimate the Migration effort"
+                "context": "移行作業の見積もり"
               }
             ]
           },
           {
             "id": "SecurityOverview",
-            "abbreviation": "Security Overview",
-            "name": "Security Overview",
-            "ability": "Use this section to capture some key aspects related to the AS/400 aspects of your migration to begin informing a path forward for this area of the initiative.",
+            "abbreviation": "セキュリティ概要",
+            "name": "セキュリティ概要",
+            "ability": "このセクションを使用して、AS/400（IBM iSeries）システムのいくつかの重要な側面を把握し、この領域の担当者との協力を始めます。",
             "questions": [
               {
                 "id": "optionalAS400-SecurityOverview-0",
                 "type": "liveEvent",
-                "question": "What AS/400 security system is used, or is mainframe security implemented within the applications?",
+                "question": "どんなAS/400セキュリティシステムが使用されていますか、それともメインフレームセキュリティがアプリケーション内に実装されていますか？",
                 "answerType": "text",
-                "hint": "Provide the security system used like LDAP",
-                "context": "Design target security architecture"
+                "hint": "LDAPのようなセキュリティシステムを用意します。",
+                "context": "ターゲットセキュリティアーキテクチャの設計"
               },
               {
                 "id": "optionalAS400-SecurityOverview-1",
                 "type": "liveEvent",
-                "question": "Are there any special audit, security, compliance or environmental requirements?",
+                "question": "特別な監査、セキュリティ、コンプライアンス、または環境要件はありますか？",
                 "answerType": "text",
-                "hint": "Example- HIPAA,SOX,PCI",
-                "context": "Design target security architecture"
+                "hint": "例 - HIPAA、SOX、PCI",
+                "context": "ターゲットセキュリティアーキテクチャの設計"
               },
               {
                 "id": "optionalAS400-SecurityOverview-2",
                 "type": "liveEvent",
-                "question": "What is the approximate number of Users, Groups, and Resource?",
+                "question": "ユーザー、グループ、リソースのおおよその数はいくつですか？",
                 "answerType": "text",
-                "hint": "No. of Groups:10 , No. of Users :100",
-                "context": "Design target security architecture"
+                "hint": "グループ数:10、ユーザ数:100",
+                "context": "ターゲットセキュリティアーキテクチャの設計"
               },
               {
                 "id": "optionalAS400-SecurityOverview-3",
                 "type": "liveEvent",
-                "question": "Is the access to the system controlled by advanced authentication/authorization?",
+                "question": "システムへのアクセスは高度な認証/承認によって制御されていますか？",
                 "answerType": "text",
-                "hint": "Example: SSO, Multifactor authentication",
-                "context": "Design target security architecture"
+                "hint": "例：SSO、多要素認証",
+                "context": "ターゲットセキュリティアーキテクチャの設計"
               },
               {
                 "id": "optionalAS400-SecurityOverview-4",
                 "type": "liveEvent",
-                "question": "Do you currently post mainframe security events to a Security Incident and Event Management (SIEM) system for security and compliance monitoring purposes? If so, what is used? Will this be a requirement for the cloud application(rehosted/refactored/rewritten)?",
+                "question": "現在、セキュリティとコンプライアンスの監視を目的として、メインフレームのセキュリティイベントをセキュリティインシデントおよびイベント管理（SIEM）システムに通知していますか？ もしそうなら、何が使われますか？ これはクラウドアプリケーション (リホスト/リファクタリング/書き換え) の要件になりますか?",
                 "answerType": "text",
-                "hint": "Example: Qradar, Splunk, LogRhythm",
-                "context": "Design target security architecture"
+                "hint": "例:Qradar、Splunk、logRhythm",
+                "context": "ターゲットセキュリティアーキテクチャの設計"
               },
               {
                 "id": "optionalAS400-SecurityOverview-5",
                 "type": "liveEvent",
-                "question": "Are AS400 applications checked for vulnerabilities before they are deployed into production?",
+                "question": "AS400アプリケーションは、本番環境に導入される前に脆弱性がないかチェックされていますか？",
                 "answerType": "yesno",
-                "hint": "YES/No",
-                "context": "Design target security architecture"
+                "hint": "はい/いいえ",
+                "context": "ターゲットセキュリティアーキテクチャの設計"
               }
             ]
           }
